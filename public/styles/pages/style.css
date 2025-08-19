@@ -1,0 +1,107 @@
+@import "../app.css";
+
+.slider {
+    width: 100%;
+    height: 30rem;
+    /*background: var(--background-color);*/
+}
+
+/* =======================
+   کارت‌ها
+======================= */
+/*.card {*/
+/*    background-color: var(--primary-color);*/
+/*    color: var(--white-color);*/
+/*    padding: var(--card-padding);*/
+/*    border-radius: 1rem;*/
+/*}*/
+
+/*.card__text {*/
+/*    font-size: var(--font-size-base);*/
+/*}*/
+
+/*!* =======================*/
+/*   ویژگی‌ها*/
+/*======================= *!*/
+/*.feature {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 1rem;*/
+/*}*/
+
+/*.feature__icon {*/
+/*    font-size: var(--feature-icon-size);*/
+/*    color: var(--primary-color);*/
+/*}*/
+
+/*!* =======================*/
+/*   خدمات*/
+/*======================= *!*/
+/*.service-card {*/
+/*    padding: var(--card-padding);*/
+/*    background-color: var(--white-color);*/
+/*    border-radius: 1rem;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.service-card__icon {*/
+/*    font-size: var(--service-icon-size);*/
+/*    color: var(--secondary-color);*/
+/*}*/
+
+/*.service-card__title {*/
+/*    font-size: var(--font-size-lg);*/
+/*    margin: 1rem 0;*/
+/*}*/
+
+/*.service-card__price {*/
+/*    font-size: var(--font-size-xxl);*/
+/*    color: var(--secondary-color);*/
+/*}*/
+
+/*!* =======================*/
+/*   دکمه‌ها*/
+/*======================= *!*/
+/*.cta__btn {*/
+/*    padding: var(--button-padding);*/
+/*    background-color: var(--secondary-color);*/
+/*    color: var(--white-color);*/
+/*    border: none;*/
+/*    border-radius: 0.5rem;*/
+/*    cursor: pointer;*/
+/*    font-size: var(--font-size-base);*/
+/*}*/
+
+/*!* =======================*/
+/*   بخش‌ها*/
+/*======================= *!*/
+/*.section {*/
+/*    padding: var(--section-gap) 2rem;*/
+/*}*/
+
+/*!* =======================*/
+/*   تغییر متغیرها در ریسپانسیو*/
+/*======================= *!*/
+/*@media screen and (min-width: 768px) {*/
+/*    :root {*/
+/*        --card-padding: 4rem;*/
+/*        --feature-icon-size: 6rem;*/
+/*        --service-icon-size: 8rem;*/
+/*        --font-size-base: 1.5rem;*/
+/*        --font-size-lg: 2.3rem;*/
+/*        --button-padding: 1.5rem 3rem;*/
+/*        --section-gap: 5rem;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1200px) {*/
+/*    :root {*/
+/*        --card-padding: 5rem;*/
+/*        --feature-icon-size: 7rem;*/
+/*        --service-icon-size: 9rem;*/
+/*        --font-size-base: 1.6rem;*/
+/*        --font-size-lg: 2.5rem;*/
+/*        --button-padding: 2rem 3.5rem;*/
+/*        --section-gap: 6rem;*/
+/*    }*/
+/*}*/

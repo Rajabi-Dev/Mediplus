@@ -1,0 +1,151 @@
+.footer {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 2rem 0;
+    font-family: var(--font-family);
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__title {
+    font-size: var(--md);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer__title::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    border-bottom: 2px solid var(--white-color);
+    margin-top: .4rem;
+}
+
+.footer__text {
+    font-size: var(--xs);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+/* social icons */
+.footer__icons {
+    display: flex;
+    gap: .4rem;
+}
+.footer__icon {
+    padding: .6rem;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: var(--xs);
+    transition: var(--transitionConfig);
+}
+.footer__icon:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* quick links */
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin-top: 1rem;
+}
+.footer__item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: var(--xs);
+}
+.footer__link {
+    color: var(--white-color);
+    font-size: var(--xs);
+    transition: var(--transitionConfig);
+}
+.footer__link:hover {
+    color: var(--gray-color);
+}
+
+/* open hours */
+.footer__slot {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--xs);
+    margin-bottom: .4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: .2rem;
+}
+.footer__day {
+    font-weight: 500;
+}
+.footer__time {
+    color: var(--gray-color);
+}
+
+/* newsletter */
+.footer__form {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.footer__input {
+    flex: 1;
+    padding: .6rem .8rem;
+    font-size: var(--xs);
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.footer__button {
+    padding: .6rem 1rem;
+    font-size: var(--xs);
+    border: none;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: var(--transitionConfig);
+    border-radius: 0;
+}
+
+.footer__button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+
+/* responsive */
+@media screen and (min-width: 768px) {
+    .footer__inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    .footer__about,
+    .footer__quick-links,
+    .footer__open-hours,
+    .footer__newsletter {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer__about,
+    .footer__quick-links,
+    .footer__open-hours,
+    .footer__newsletter {
+        flex: 1 1 20%;
+        max-width: 240px;
+    }
+}

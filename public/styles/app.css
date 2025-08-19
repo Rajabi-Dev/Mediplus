@@ -1,0 +1,15 @@
+@import "components/normilize.css";
+@import "../fonts/fontawesome.css";
+@import "../fonts/fonts.css";
+/* package */
+@import "components/variable.css";
+/*  Variables  */
+@import "components/loader.css";
+@import "components/general.css";
+@import "components/header.css";
+@import "components/nav.css";
+@import "components/footer.css";
+/* Component */
+
+
+

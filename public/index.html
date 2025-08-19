@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mediplus</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="styles/pages/style.css">
+<!--    <link rel="stylesheet" href="styles/app.css">-->
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<div id="loader" class="loader">
+<span class="loading"></span>
+</div>
+<div id="app" class="app" style="display: none">
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link link-hover">About</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link link-hover">Doctors</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link link-hover">Contact</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link link-hover">FAQ</a>
+                </li>
+            </ul>
+            <div class="header__contact-info">
+                <span class="header__info header__info--phone">
+                <span class="fa fa-phone"></span>
+                    <a class="link-hover" href="tel:+989205044086">+989205044086</a>
+                </span>
+                <span class="header__info header__info--email">
+                    <span class="fas fa-envelope"></span>
+                    <a class="link-hover" href="mailto:mahdi.rajabi.info@gmail.com">example@gmail.com</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="nav">
+    <div class="container">
+        <div class="nav__inner">
+            <a class="nav__logo" href="./"> <img src="img/logo.png" class="nav__logo-img"></a>
+            <div class="nav__hide-blank test" id="navHideBlank"></div>
+            <div class="nav__navigation" id="navNavigation">
+                <ul class="nav__list-container">
+                    <li class="nav__list" data-sub="subMenu">
+                        <a href="#" class="nav__link active-link">Home
+                        <span class="angle fa fa-angle-right "></span>
+                    </a>
+                        <ul class="nav__sub-navigation">
+                            <li class="nav__sub-list"><a href="#" class="nav__sub-link">item1</a></li>
+                            <li class="nav__sub-list"><a href="#" class="nav__sub-link">item2</a></li>
+                            <li class="nav__sub-list"><a href="#" class="nav__sub-link">item3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__list"><a href="#" class="nav__link">Doctor</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Pages</a>
+                    </li>
+                    <li class="nav__list"><a href="#" class="nav__link">Blogs</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Contact-Us</a></li>
+                </ul>
+                <div id="navClose" class="nav__close">
+                    <span class="fa fa-times"></span>
+                </div>
+            </div>
+            <a href="#" class="nav__appointment-button btn-hover-bg">Book Appointment</a>
+            <div class="nav__menu-toggle" id="navMenuToggle">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="slider"></section>
+<!--</section>-->
+<!--<section class="cards">-->
+<!--    <div class="container">-->
+<!--        <div class="cards__inner">-->
+<!--            &lt;!&ndash; Card 1 &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <span class="card__author">Mahdi-Rajabi</span>-->
+<!--                <h2 class="card__title">Neurologist</h2>-->
+<!--                <div class="card__schedule">-->
+<!--                    <div class="card__slot">-->
+<!--                        <span class="card__day">Monday-Friday</span>-->
+<!--                        <span class="card__time">8:00-20:00</span>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;                    <i class="fa fa-ambulance"></i>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <i class="fa fa-long-arrow-right"></i>&ndash;&gt;-->
+<!--                    <div class="card__slot">-->
+<!--                        <span class="card__day">Monday-Friday</span>-->
+<!--                        <span class="card__time">8:00-20:00</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <a href="#" class="card__cta">Learn More-->
+<!--                    <i class="fas fa-long-arrow-alt-right"></i></a>-->
+<!--                <div class="card__icon">-->
+<!--                    <i class="fa fa-ambulance"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--            &lt;!&ndash; Card 2 &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <span class="card__author">Mahdi-Rajabi</span>-->
+<!--                <h2 class="card__title">Neurologist</h2>-->
+<!--                <div class="card__schedule">-->
+<!--                    <div class="card__slot">-->
+<!--                        <span class="card__day">Monday-Friday</span>-->
+<!--                        <span class="card__time">8:00-20:00</span>-->
+<!--                    </div>-->
+<!--                    <div class="card__slot">-->
+<!--                        <span class="card__day">Monday-Friday</span>-->
+<!--                        <span class="card__time">8:00-20:00</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <a href="#" class="card__cta">Learn More-->
+<!--                    <i class="fas fa-long-arrow-alt-right"></i></a>-->
+<!--                <div class="card__icon">-->
+<!--                    <i class="icofont-prescription"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--            &lt;!&ndash; Card 3 &ndash;&gt;-->
+<!--            <div class="card">-->
+<!--                <span class="card__author">Mahdi-Rajabi</span>-->
+<!--                <h2 class="card__title">Neurologist</h2>-->
+<!--                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis-->
+<!--                    cupiditate debitis dolor laudantium molestias neque pariatur quasi unde veritatis?</p>-->
+<!--                <a href="#" class="card__cta">Learn More-->
+<!--                    <i class="fas fa-long-arrow-alt-right"></i></a>-->
+<!--                <div class="card__icon">-->
+<!--                    <i class="icofont-ui-clock"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--<main>-->
+<!--    <div class="container">-->
+<!--        <div class="content&#45;&#45;title">-->
+<!--            <h2 class="content&#45;&#45;title__title">We Are Always Ready To Help You & Your Falmily </h2>-->
+<!--            <img class="content&#45;&#45;title__icon" src="img/section-img.png">-->
+<!--            <p class="content&#45;&#45;title__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,-->
+<!--                tempora.</p>-->
+<!--        </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--        <div class="feature">-->
+<!--            <div class="feature__item">-->
+<!--                <span class="feature__icon  icofont icofont-stethoscope"></span>-->
+<!--                <h3 class="feature__title">Emergency Help</h3>-->
+<!--                <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,-->
+<!--                    magni!</p>-->
+<!--            </div>-->
+<!--            <div class="feature__item">-->
+<!--                <span class="feature__icon  icofont icofont-medical-sign-alt"></span>-->
+<!--                <h3 class="feature__title">Enriched Pharmecy</h3>-->
+<!--                <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,-->
+<!--                    magni!</p>-->
+<!--            </div>-->
+<!--            <div class="feature__item">-->
+<!--                <span class="feature__icon  icofont icofont-stethoscope"></span>-->
+<!--                <h3 class="feature__title">Medical Treatment</h3>-->
+<!--                <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,-->
+<!--                    magni!</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--    </div>-->
+<!--    <div class="cta">-->
+<!--        <h3 class="cta__title">Do you need Emergency Medical Care? Call @ 1234 56789</h3>-->
+<!--        <p class="cta__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad incidunt laborum quas, quos-->
+<!--            repellat reprehenderit.</p>-->
+<!--        <div class="cta__actions">-->
+<!--            <button class="cta__btn">Contact Now</button>-->
+<!--            <button class="cta__btn">Learn More<i class="fa fa-arrow-right"></i></button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="container">-->
+<!--        <div class="content&#45;&#45;title">-->
+<!--            <h2 class="content&#45;&#45;title__title">We Are Always Ready To Help You & Your Falmily </h2>-->
+<!--            <img class="content&#45;&#45;title__icon" src="img/section-img.png">-->
+<!--            <p class="content&#45;&#45;title__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,-->
+<!--                tempora.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--    <div class="services-card">-->
+<!--        <div class="service-card">-->
+<!--            <span class="service-card__icon icofont icofont-tooth"></span>-->
+<!--            <h3 class="service-card__title">plastic suggery</h3>-->
+<!--            <div class="service-card__detail">-->
+<!--                <span class="service-card__price">$199</span>-->
+<!--                <span class="service-card__word">/ Per Visit</span>-->
+<!--            </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <button class="service-card__button">Book Now</button>-->
+<!--        </div>-->
+<!--        <div class="service-card">-->
+<!--            <span class="service-card__icon icofont icofont-ui-cut"></span>-->
+<!--            <h3 class="service-card__title">plastic suggery</h3>-->
+<!--            <div class="service-card__detail">-->
+<!--                <span class="service-card__price">$199</span>-->
+<!--                <span class="service-card__word">/ Per Visit</span>-->
+<!--            </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <button class="service-card__button">Book Now</button>-->
+<!--        </div>-->
+<!--        <div class="service-card">-->
+<!--            <span class="service-card__icon icofont-heart-beat"></span>-->
+<!--            <h3 class="service-card__title">plastic suggery</h3>-->
+<!--            <div class="service-card__detail">-->
+<!--                <span class="service-card__price">$199</span>-->
+<!--                <span class="service-card__word">/ Per Visit</span>-->
+<!--            </div>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <div class="service-card__option">-->
+<!--                <span class="service-card__text">Lorem ipsum dolor sit amet.</span>-->
+<!--                <span class="service-card__check fa fa-check"></span>-->
+<!--            </div>-->
+<!--            <button class="service-card__button">Book Now</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="container">-->
+<!--        <div class="content&#45;&#45;title">-->
+<!--            <h2 class="content&#45;&#45;title__title">We Are Always Ready To Help You & Your Falmily </h2>-->
+<!--            <img class="content&#45;&#45;title__icon" src="img/section-img.png">-->
+<!--            <p class="content&#45;&#45;title__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,-->
+<!--                tempora.</p>-->
+<!--        </div>-->
+<!--        <div class="blogs">-->
+<!--            <div class="blog">-->
+<!--                <img src="img/blog1.jpg" alt="" class="blog__img">-->
+<!--                <div class="blog__content">-->
+<!--                    <span class="blog__date-label">05 Jan, 2020</span>-->
+<!--                    <h3 class="blog__title">Top five way</h3>-->
+<!--                    <div class="blog__text">-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum laudantium-->
+<!--                        magnam nihil officiis, quas qui rem vel veritatis!-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="blog">-->
+<!--                <img src="img/blog1.jpg" alt="" class="blog__img">-->
+<!--                <div class="blog__content">-->
+<!--                    <span class="blog__date-label">05 Jan, 2020</span>-->
+<!--                    <h3 class="blog__title">Top five way</h3>-->
+<!--                    <div class="blog__text">-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum laudantium-->
+<!--                        magnam nihil officiis, quas qui rem vel veritatis!-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="blog">-->
+<!--                <img src="img/blog1.jpg" alt="" class="blog__img">-->
+<!--                <div class="blog__content">-->
+<!--                    <span class="blog__date-label">05 Jan, 2020</span>-->
+<!--                    <h3 class="blog__title">Top five way</h3>-->
+<!--                    <div class="blog__text">-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum laudantium-->
+<!--                        magnam nihil officiis, quas qui rem vel veritatis!-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="blog">-->
+<!--                <img src="img/blog1.jpg" alt="" class="blog__img">-->
+<!--                <div class="blog__content">-->
+<!--                    <span class="blog__date-label">05 Jan, 2020</span>-->
+<!--                    <h3 class="blog__title">Top five way</h3>-->
+<!--                    <div class="blog__text">-->
+<!--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cum laudantium-->
+<!--                        magnam nihil officiis, quas qui rem vel veritatis!-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="sign-in">-->
+<!--            <form action="#" class="form sign-in__form">-->
+<!--                <div class="sign-in__input">-->
+<!--                    <input type="text" class="sign-in__text" placeholder="Name">-->
+<!--                    <input type="text" class="sign-in__text" placeholder="Name">-->
+<!--                    <input type="text" class="sign-in__text" placeholder="Name">-->
+<!--                    <select class="sign-in__department">-->
+<!--                        <option value="1">Department</option>-->
+<!--                        <option value="1">Department</option>-->
+<!--                        <option value="1">Department</option>-->
+<!--                    </select>-->
+<!--                    <select class="sign-in__doctor">-->
+<!--                        <option value="1">Department</option>-->
+<!--                        <option value="1">Department</option>-->
+<!--                        <option value="1">Department</option>-->
+<!--                    </select>-->
+<!--                    <input type="date" class="sign-in__date">-->
+<!--                </div>-->
+<!--                <textarea class="sign-in__message" name="" id="" cols="20" rows="10"></textarea>-->
+<!--                <button class="sign-in__btn">Submit</button>-->
+<!--            </form>-->
+<!--            <figure class="sign-in__picture"><img class="sign-in__img" src="img/contact-img.png" alt=""></figure>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</main>-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__about">
+                <h2 class="footer__title">About Us</h2>
+                <p class="footer__text">Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor
+                    incididunt ut labore dolore magna.</p>
+                <div class="footer__icons">
+                    <span class="footer__icon fab fa-facebook"></span>
+                    <span class="footer__icon fab fa-pinterest"></span>
+                    <span class="footer__icon fab fa-telegram"></span>
+                    <span class="footer__icon fab fa-google"></span>
+                    <span class="footer__icon fab fa-instagram"></span>
+                </div>
+            </div>
+            <div class="footer__quick-links">
+                <h2 class="footer__title">Quick Links</h2>
+                <ul class="footer__list">
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Home</a>
+                    </li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">About
+                        Us</a></li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Services</a>
+                    </li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Our
+                        Cases</a></li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Other
+                        Links</a></li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Consulting</a>
+                    </li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Finance</a>
+                    </li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Testimonials</a>
+                    </li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#"
+                                                                                       class="footer__link">FAQ</a></li>
+                    <li class="footer__item"><span class="fa fa-caret-right"></span><a href="#" class="footer__link">Contact
+                        Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__open-hours">
+                <h2 class="footer__title">Open Hours</h2>
+                <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt.</p>
+                <ul class="footer__list">
+                    <div class="footer__slot">
+                        <span class="footer__day">Monday-Friday</span>
+                        <span class="footer__time">8:00-20:00</span>
+                    </div>
+                    <div class="footer__slot">
+                        <span class="footer__day">Monday-Friday</span>
+                        <span class="footer__time">8:00-20:00</span>
+                    </div>
+                    <div class="footer__slot">
+                        <span class="footer__day">Monday-Friday</span>
+                        <span class="footer__time">8:00-20:00</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer__newsletter">
+                <h2 class="footer__title">Newsletter</h2>
+                <p class="footer__text">Subscribe to our newsletter to get all the news in your inbox. Lorem ipsum dolor
+                    sit
+                    amet, consectetur adipisicing elit.</p>
+                <form class="footer__form">
+                    <input type="email" class="footer__input" placeholder="Email Address">
+                    <button type="submit" class="footer__button"><span class="fa fa-paper-plane"></span>
+
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script type="module" src="../src/index.js" defer></script>
+</div>
+</body>
+</html>
