@@ -3,6 +3,6 @@ export function pageLoader(loader, app) {
         setTimeout(() => {
             loader.style.display = "none";
             app.style.display = "block";
-        }, 1000)
+        }, 100)
     }
 }
